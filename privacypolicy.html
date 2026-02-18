@@ -6,17 +6,31 @@
 <title>Privacy Policy - OKAS SIP Door Phone</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7;
+        margin: 40px auto;
         max-width: 900px;
-    }
-    h1, h2, h3 {
-        color: #1a1a1a;
+        color: #222;
     }
     h1 {
         border-bottom: 2px solid #eee;
         padding-bottom: 10px;
+    }
+    h2 {
+        margin-top: 30px;
+    }
+    h3 {
+        margin-top: 20px;
+    }
+    ul {
+        margin-left: 20px;
+    }
+    a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 </style>
 </head>
@@ -24,79 +38,267 @@
 
 <h1>Privacy Policy</h1>
 
-<p><strong>Application:</strong> OKAS SIP Door Phone</p>
-
 <h2>1. Introduction</h2>
-<p>OKAS SIP Door Phone is a SIP-based door phone and communication application.</p>
+
+<p><strong>OKAS SIP Door Phone</strong> is a SIP-based door phone and communication application.</p>
+
 <p>This Privacy Policy explains how we collect, use, transmit, and protect information when you use our application.</p>
+
 <p>By installing or using the application, you agree to the practices described in this Privacy Policy.</p>
 
 <h2>2. Information We Collect</h2>
 
 <h3>2.1 SIP Account Information</h3>
+
+<p>When configuring the application, users may enter:</p>
+
 <ul>
 <li>SIP username</li>
 <li>SIP password</li>
 <li>SIP server domain or IP address</li>
 <li>Display name</li>
 </ul>
+
 <p>This information is used solely to enable SIP-based voice and video communication.</p>
-<p>SIP credentials are stored locally on the device and are not sold or shared for advertising.</p>
+
+<p><strong>SIP credentials:</strong></p>
+<ul>
+<li>Are stored locally on the user’s device</li>
+<li>Are not transmitted to our company servers unless the SIP server is operated by your organization</li>
+<li>Are not sold, rented, or shared for advertising or marketing purposes</li>
+</ul>
 
 <h3>2.2 Audio Data (Microphone Permission – RECORD_AUDIO)</h3>
-<p>Microphone access is required for two-way voice communication during active SIP sessions. Audio data is transmitted only during active sessions and routed through the configured SIP server.</p>
+
+<p>The application requests microphone access to:</p>
+
+<ul>
+<li>Enable two-way voice communication</li>
+<li>Support SIP audio calls</li>
+<li>Allow door phone interaction</li>
+</ul>
+
+<p><strong>Audio data:</strong></p>
+<ul>
+<li>Is transmitted only during active communication sessions</li>
+<li>Is routed through the configured SIP server</li>
+<li>Is not recorded or stored by us unless the user explicitly enables recording functionality</li>
+</ul>
+
+<p>We do not sell or use audio data for advertising.</p>
 
 <h3>2.3 Video Data (Camera Permission – CAMERA)</h3>
-<p>Camera access enables SIP video calls and live video streams. Video is transmitted only during active sessions and is not stored unless configured by the user.</p>
+
+<p>The application may request camera access to:</p>
+
+<ul>
+<li>Enable SIP video calls</li>
+<li>Display live video streams from connected SIP door devices</li>
+</ul>
+
+<p><strong>Video data:</strong></p>
+<ul>
+<li>Is transmitted only during active communication sessions</li>
+<li>Is routed through the configured SIP server</li>
+<li>Is not stored or archived by us unless explicitly configured by the user</li>
+</ul>
 
 <h3>2.4 Network and Connectivity Information</h3>
-<p>We may process IP address, Wi-Fi state, and connectivity status to maintain SIP registration and communication stability.</p>
 
-<h3>2.5 Notifications</h3>
-<p>Notifications are used to inform users of incoming calls and call status updates.</p>
+<p>The application may process technical information including:</p>
 
-<h3>2.6 Call Management</h3>
-<p>Android call management features are used to handle SIP calls. The app does not access cellular carrier call data.</p>
+<ul>
+<li>IP address</li>
+<li>Network connection status</li>
+<li>Wi-Fi connection state</li>
+<li>Device connectivity status</li>
+</ul>
 
-<h3>2.7 Background Services</h3>
-<p>Foreground and background services are used to maintain SIP connectivity and enable real-time communication.</p>
+<p>This information is required to:</p>
 
-<h3>2.8 Device Wake & Boot Services</h3>
-<p>The app may prevent device sleep during calls and restart SIP registration after reboot.</p>
+<ul>
+<li>Maintain SIP registration</li>
+<li>Receive incoming calls</li>
+<li>Ensure stable communication</li>
+<li>Restore service after device reboot</li>
+</ul>
+
+<p>This information is used strictly for communication functionality and not for tracking or advertising.</p>
+
+<h3>2.5 Notifications (POST_NOTIFICATIONS, USE_FULL_SCREEN_INTENT)</h3>
+
+<p>The application uses notifications to:</p>
+
+<ul>
+<li>Inform users of incoming calls</li>
+<li>Display missed call alerts</li>
+<li>Provide call status updates</li>
+</ul>
+
+<p>Full-screen notifications may be used during incoming calls to provide a call-like user experience.</p>
+
+<p>Notification data is used solely for communication functionality.</p>
+
+<h3>2.6 Call Management (MANAGE_OWN_CALLS, USE_SIP)</h3>
+
+<p>The application uses Android call management features to:</p>
+
+<ul>
+<li>Handle SIP calls</li>
+<li>Display call UI</li>
+<li>Manage call states (incoming, ongoing, ended)</li>
+</ul>
+
+<p>The app does not access or manage cellular carrier call data.</p>
+
+<h3>2.7 Background Services & Foreground Services</h3>
+
+<p>The application may use foreground services and background processing to:</p>
+
+<ul>
+<li>Maintain active SIP registration</li>
+<li>Support real-time incoming calls</li>
+<li>Enable microphone and camera during calls</li>
+<li>Maintain reliable communication sessions</li>
+<li>Perform data synchronization required for SIP connectivity</li>
+</ul>
+
+<p><strong>Foreground services used include:</strong></p>
+
+<ul>
+<li>Phone call service</li>
+<li>Microphone service</li>
+<li>Camera service</li>
+<li>Data sync service</li>
+<li>Special use service (for full-screen call notifications)</li>
+</ul>
+
+<p>These services are used exclusively for communication functionality and not for tracking or advertising.</p>
+
+<h3>2.8 Device Wake & Boot Services (WAKE_LOCK, RECEIVE_BOOT_COMPLETED)</h3>
+
+<p>The application may:</p>
+
+<ul>
+<li>Prevent device sleep during active calls</li>
+<li>Restart SIP registration after device reboot</li>
+</ul>
+
+<p>These features ensure reliable communication functionality.</p>
+
+<p>No additional personal data is collected during these processes.</p>
 
 <h2>3. Third-Party SIP Server Processing</h2>
-<p>Communication is routed through the configured SIP server, which may be operated by your organization or a third-party provider. We do not control third-party server privacy practices.</p>
+
+<p>OKAS SIP Door Phone enables communication through a SIP server that may be:</p>
+
+<ul>
+<li>Operated by your organization, or</li>
+<li>Operated by a third-party SIP service provider</li>
+</ul>
+
+<p>When you use the app:</p>
+
+<ul>
+<li>Call signaling data is transmitted to the configured SIP server</li>
+<li>Audio and video streams are routed through the SIP server</li>
+</ul>
+
+<p>We do not control the privacy practices of independently operated third-party SIP servers.</p>
+
+<p>Users are responsible for reviewing the privacy policies of their SIP service provider.</p>
+
+<p>We do not sell or commercially exploit communication data.</p>
 
 <h2>4. Data Storage & Retention</h2>
+
 <ul>
-<li>SIP credentials stored locally</li>
-<li>No centralized storage of voice or video</li>
-<li>No centralized call recording</li>
+<li>SIP credentials are stored locally on the device</li>
+<li>We do not centrally store voice content</li>
+<li>We do not centrally store video content</li>
+<li>We do not maintain centralized call recording storage</li>
+<li>Call metadata (if generated) is handled by the configured SIP server</li>
+</ul>
+
+<p>Users may delete local data by:</p>
+
+<ul>
+<li>Logging out</li>
+<li>Clearing app data</li>
+<li>Uninstalling the application</li>
 </ul>
 
 <h2>5. Data Sharing</h2>
-<p>We do not sell or trade personal data. Information is transmitted only to the configured SIP server for communication.</p>
+
+<p>We do not sell, rent, or trade personal data.</p>
+
+<p>Information may be transmitted only to:</p>
+
+<ul>
+<li>The configured SIP server for communication routing</li>
+<li>Network providers necessary to establish connectivity</li>
+</ul>
+
+<p>We do not share data for advertising or marketing purposes.</p>
 
 <h2>6. Data Security</h2>
-<p>We implement reasonable safeguards including secure credential storage and encrypted SIP communication (if supported).</p>
 
-<h2>7. Legal Basis for Processing</h2>
-<p>We process data to provide communication services requested by the user.</p>
+<p>We implement reasonable technical and organizational safeguards including:</p>
+
+<ul>
+<li>Secure credential storage on device</li>
+<li>Encrypted SIP communication (if supported by the SIP server)</li>
+<li>Restricted background processing</li>
+<li>Controlled permission access</li>
+</ul>
+
+<p>However, no transmission method over the Internet is completely secure.</p>
+
+<h2>7. Legal Basis for Processing (Where Applicable)</h2>
+
+<p>We process data to:</p>
+
+<ul>
+<li>Provide communication services requested by the user</li>
+<li>Enable SIP functionality</li>
+<li>Maintain service reliability</li>
+</ul>
+
+<p>By using the application, you consent to this processing.</p>
 
 <h2>8. Children’s Privacy</h2>
+
 <p>This application is not directed to children under 13 years of age.</p>
 
+<p>We do not knowingly collect personal information from children.</p>
+
 <h2>9. Third-Party Libraries & Services</h2>
-<p>The app may use Android system services, SIP libraries (e.g., Linphone), and push notification services.</p>
+
+<p>The application may use:</p>
+
+<ul>
+<li>Android system services</li>
+<li>SIP communication libraries (such as Linphone or similar libraries)</li>
+<li>Push notification services (if enabled)</li>
+</ul>
+
+<p>These third-party components may process technical data according to their respective privacy policies.</p>
 
 <h2>10. International Data Transfers</h2>
-<p>Communication data may be transmitted internationally if the SIP server is located outside your country.</p>
+
+<p>If the configured SIP server is located outside your country, communication data may be transmitted internationally as required for communication functionality.</p>
+
+<p>By using the application, you consent to such transfers.</p>
 
 <h2>11. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time.</p>
+
+<p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
 
 <h2>12. Contact Information</h2>
-<p>Email: vyomappdevelopment@gmail.com</p>
+
+<p>If you have questions about this Privacy Policy, please contact:</p>
+
+<p>Email: <a href="mailto:vyomappdevelopment@gmail.com">vyomappdevelopment@gmail.com</a></p>
 
 </body>
 </html>
